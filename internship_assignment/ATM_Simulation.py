@@ -12,22 +12,29 @@ def atm():
     while True:
 
         if check == 1:
-            print("your balance is : ",balance)
+            print("your balance is :₹ ",balance)
         elif check == 2:
             print("enter your amount")
             amount = int(input(":)"))
             balance = balance + amount
-            print("your balance is : ",balance)
+            print("your balance is : ₹ ",balance)
         elif check == 3:
             print("enter your amount")
             amount = int(input(":)"))
             if amount <= balance:
                 balance = balance - amount
-                print("your balance is : ",balance)
+                print("your balance is :₹ ",balance)
             else:
                 print("Insufficient Balance")
         elif check == 4:
-            print("*** THANK YOU ***")
+            print("*** THANK YOU ***\n")
+            
+
+            print("\n*** MENU ***")
+            print("1. Check Balance")
+            print("2. Deposit")
+            print("3. withdraw")
+            print("4. Exit")
 
         else:
             print("----SOMTHING RONG----")
