@@ -1,6 +1,6 @@
 def loging():
     creatUserName = input("ENTER USERNAME : ")
-    creatPassword = int(input("ENTER PASSWORD : "))
+    creatPassword = input("ENTER PASSWORD : ")
     print("\n")
     print("*** LOGING ***\n")
     
@@ -10,14 +10,14 @@ def loging():
     
     while i<4 :
         userName = input("enter user name : ")
-        password = int(input("enter password : "))
+        password = input("enter password : ")
         
         if creatUserName == userName and creatPassword == password :
             print("loging successfully")
             break
             
         else:
-            print("Incorrect Username & Password")
+            print("Incorrect Username & Password !")
             print(f"Attampts Remaining {3-i}")
             i+=1
         if i >3:
